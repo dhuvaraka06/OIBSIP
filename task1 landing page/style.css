@@ -1,0 +1,508 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url("background\ \(2\).jpg");
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    width: auto;
+    overflow: hidden;
+}
+.logo{
+    color: rgb(191, 110, 34);
+   
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+nav{
+    display: flex;
+    padding: 50px 60px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    animation: slideinright 1s ease-in 1s 1 normal;
+}
+nav ul{
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    margin: 0px 10px;
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(191, 110, 34);
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+nav button:hover{
+    transform: translateY(-10px);
+}
+.container  .quote{
+    
+    padding: 50px 60px;
+    font-weight: 400;
+    color: white;
+    font-size: 58px;
+    font-family: 'Merriweather', serif;
+    
+}
+.container .quotes{
+    color: white;
+    position: relative;
+    bottom: 10%;
+    left: 4%;
+    font-size: 58px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+.container .btn{
+    position: relative;
+    bottom:12%;
+    left:4% ;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: rgb(191, 110, 34);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    animation: slideinleft 1s ease-in 1s 1 normal;
+}
+.container .btn:hover{
+    transform: translateY(-10px);
+}
+@keyframes slideinleft{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.container  .quote{
+    animation: slideinleft 1s ease-in 1s 1 normal;
+}
+.container .quotes{
+    animation: slideinleft 1s ease-in 1s 1 normal;
+}
+@keyframes slideinright{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.aboutus{
+    background-color: #fff;
+	height: 640px;
+	display: inline-block;
+	width: auto;
+    overflow: hidden;
+    animation: slideintop 1s ease-in 2.5s 1 normal;
+    
+}
+.aboutus .about{
+    padding: 50px 100px;
+    top: 50px;
+    position: relative;
+    color: rgb(234, 95, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.aboutus .new1{
+    padding: 50px 100px;
+    position: relative;
+   bottom: 60px;
+   font-size: 40px;
+}
+.aboutus .new2{
+    padding: 65px 100px;
+    position: relative;
+   bottom: 200px;
+   font-size: 40px;
+}
+.aboutus .first{
+    padding: 60px 100px;
+    position: relative;
+    bottom: 325px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 18px;
+    line-height: 1.3;
+}
+.aboutus .second{
+    padding: 70px 100px;
+    position: relative;
+    bottom: 440px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.aboutus .read{
+    padding: 15px 30px;
+    position: relative;
+    bottom: 480px;
+    left: 100px;
+    border-radius: 30px;
+    outline: none;
+    background-color:rgb(234, 95, 15);;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.aboutus .image1 img{
+    width: 240px;
+	height: 290px;
+	position: absolute;
+	left: 75%;
+	top: 890px;
+	border-radius: 25px;
+    animation: slideintop 1s ease-in 2.5s 1 normal;
+}
+.aboutus .image2 img{
+    width: 240px;
+	height: 290px;
+	position: absolute;
+	left: 58%;
+	top: 980px;
+	border-radius: 25px;
+    animation: slideintop 1s ease-in 2.5s 1 normal;
+}
+@keyframes slideintop{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.destination{
+    background-color: #fff;
+	height: 1100px;
+	animation: slideintop 1s ease-in 3s 1 normal;
+	width: auto;
+    overflow: hidden;
+}
+.destination .topic{
+    padding: 50px 100px;
+    position: relative;
+    bottom: 3%;
+    color:rgb(234, 95, 15); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.destination .topic1{
+    padding: 50px 100px;
+    position: relative;
+    bottom: 12%;
+    font-size: 48px;
+    line-height: 1;
+}
+.destination .para{
+    padding: 50px 100px;
+    position: relative;
+    bottom: 22%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    color: rgb(108, 105, 105);
+}
+.destination .img1 img{
+    width: 400px;
+	height: 500px;
+	position: absolute;
+	left: 6.5%;
+	top: 1750px;
+    animation: slideintop 1s ease-in 3s 1 normal;
+}
+.destination .img2 img{
+    width: 400px;
+	height: 500px;
+	position: absolute;
+	left: 36.5%;
+	top: 1750px;
+    animation: slideintop 1s ease-in 3s 1 normal;
+}
+.destination .img3 img{
+    width: 400px;
+	height: 500px;
+	position: absolute;
+	left: 66.5%;
+	top: 1750px;
+}
+.destination .london{
+    position: relative;
+    top: 250px;
+    left: 100px;
+    font-size: 26px;
+}
+.destination .switzerland{
+    position: relative;
+    top:200px ;
+    left:560px ;
+    font-size: 26px;
+}
+.destination .newyork{
+    position: relative;
+    top:150px ;
+    left:1010px ;
+    font-size: 26px;
+}
+
+.destination .lon{
+    position: relative;
+    top: 133px;
+    left: 100px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(120, 116, 116);
+    font-weight: normal;
+}
+.destination .swit{
+    position: relative;
+    top:105px ;
+    left:560px ;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(120, 116, 116);
+    font-weight: normal;
+}
+.destination .new{
+    position: relative;
+    top:75px ;
+    left:1010px ;
+   
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(120, 116, 116);
+    font-weight: normal;
+}
+
+
+
+
+.review{
+    background-color: #e4dcdc;
+    height: 720px;
+    width: auto;
+    overflow: hidden;
+}
+.review .happy{
+    position: relative;
+    top: 110px;
+    left: 100px;
+    font-size:20px ;
+    color:rgb(234, 95, 15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.review .rev{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size:48px ;
+    
+}
+.review .man img{
+    border-radius: 50%;
+    width: 60px;
+    height: 55px;
+    position: relative;
+    left: 100px;
+    top:110px ;
+}
+.review .name{
+    padding: 60px;
+    position: relative;
+    top:50px ;
+    left: 40px;
+    color:rgb(217, 122, 67);
+    
+}
+.review .name1{
+    padding: 60px;
+    position: relative;
+    bottom: 10%;
+    left: 40px;
+    color:rgb(92, 91, 91);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.review .sentence{
+    padding: 60px;
+    position: relative;
+    bottom: 25%;
+    left: 40px;
+}
+.review .btnnew{
+    padding: 10px;
+    position: relative;
+    bottom: 30%;
+    left: 100px;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(217, 122, 67);
+    color: white;
+    cursor: pointer;
+}
+.review .side1{
+    position: relative;
+    bottom: 97%;
+    left: 800px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.review .faq{
+    position: relative;
+    bottom: 94%;
+    left: 800px;
+    color: rgb(217, 122, 67);
+}
+.review .side2{
+    position: relative;
+    bottom: 95%;
+    left: 800px;
+    color: rgb(66, 65, 65);
+    font-size: 18px;
+    
+}
+.review .side3{
+    position: relative;
+    bottom: 93%;
+    left: 800px;
+    color: rgb(66, 65, 65);
+    font-size: 18px;
+}
+.review .side4{
+    position: relative;
+    bottom: 90%;
+    left: 800px;
+    color: rgb(66, 65, 65);
+    font-size: 18px;
+}
+.review .side5{
+   position: relative;
+    bottom: 87%;
+   left: 800px;
+   color: rgb(66, 65, 65) ;
+   font-size: 18px;
+}
+.smalll{
+    background-color: #d58204;
+    height: 150px;
+    width: auto;
+    overflow: hidden;
+}
+.smalll .line{
+    position: relative;
+    left: 100px;
+    top: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.smalll button {
+    position: relative;
+    left: 1200px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #d58204;
+    
+}
+.smalll button  a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.lastcontainer{
+    background-color: #bab0b0;
+    height: 450px;
+    width: auto;
+    overflow: hidden;
+}
+.lastcontainer .aboutt{
+    margin: 0;
+    position: relative;
+    left: 100px;
+    top: 80px;
+}
+.lastcontainer .paragraph{
+    position: relative;
+    left: 100px;
+    top: 90px;
+    color: #424040;
+}
+.lastcontainer .links{
+    display: flex;
+    padding: 120px ;
+    justify-content: space-between;
+
+}
+.lastcontainer .links ul{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    left: 400px;
+}
+.lastcontainer .links ul li{
+    margin: 0px 10px;
+    padding: 10px 80px;
+    
+    
+}
+.lastcontainer .links ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.lastcontainer .steps{
+   position: relative;
+   bottom: 280px;
+   line-height: 2.5;
+   left: 650px;
+   cursor: pointer;
+}
+.lastcontainer .steps1{
+    position: relative;
+    bottom: 495px;
+    line-height: 2.5;
+    left: 880px;
+    cursor: pointer;
+ }
+ .lastcontainer .steps2{
+    position: relative;
+    bottom: 710px;
+    line-height: 2.5;
+    left: 1130px;
+    cursor: pointer;
+ }
+ .lastcontainer  img{
+    position: relative;
+    bottom:50% ;
+ }
+ .lastcontainer .copyright{
+    position: relative;
+    left: 100px;
+    bottom: 200px;
+    font-size: 17px;
+    font-weight: lighter bold;
+ }
